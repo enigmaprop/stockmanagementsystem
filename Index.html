@@ -1,0 +1,202 @@
+<html>
+<head>
+    <title>إدارة المخزون</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="background">
+    <div >
+        <h1 class="title">إدارة المخزون</h1>
+        <div class="container-1">
+            <div class="product-panel">
+                <h3 class="text-center">معلومات المنتج</h3>
+                <div class="product-panel-container">
+                    <div>
+                        <div class="product-panel-input">
+                            <label>المعرف</label>
+                            <input type="text"/>
+                        </div>
+                        <div class="product-panel-input">
+                            <label>الاسم</label>
+                            <input type="text"/>
+                        </div>                    
+                        <div class="product-panel-input">
+                            <label>السعر</label>
+                            <input type="number"/>
+                        </div>                    
+                        <div class="product-panel-input">
+                            <label>الكمية</label>
+                            <input type="number"/>
+                        </div>
+                        <div class="text-center">
+                            <button class="bg-purple rounded text-md">بحث</button>
+                        </div>
+                        <div class="text-center">
+                            <button style="margin-top: 10px;" class="bg-red rounded text-md">حذف</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="product-panel-barcode"></div>
+                    </div>                
+                    </div>
+                </div>
+            <div class="image-container">
+
+            </div>
+        </div>
+        <div class="container-2">
+            <h3>اضافة منتج</h3>
+            <div class="add-product-panel">
+                <div class="add-product-inputs">
+                    <div>
+                        <label>اسم المنتج</label>
+                        <input type="text"/>
+                    </div>
+                <div>
+                    <label>السعر</label>
+                    <input type="number"/>
+                </div>
+                <div>
+                    <label>الكمية</label>
+                    <input type="number"/>
+                </div>
+                <div>
+                    <label>صورة المنتج</label>
+                    <input type="file" />
+                </div>
+                <div>
+                    <button style="width: 90px;" class="rounded bg-purple">اضافة المنتج</button>
+                </div>
+            </div>
+
+            <div class="add-product-image"></div>
+            </div>
+
+            <div class="container-2">
+                <h3>تعديل منتج</h3>
+                <div class="update-product-panel">
+                    <div class="update-product-inputs">
+                        <div>
+                            <label>المعرف</label>
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <label>الاسم</label>
+                            <input type="text" />
+                            <button style="margin-left: 0.5rem; width: 6rem;" class="rounded bg-purple">تعديل الاسم</button>
+
+                        </div>
+                        <div>
+                            <label>السعر</label>
+                            <input type="text" />
+                            <button style="margin-left: 0.5rem; width: 6rem;" class="rounded bg-purple">تعديل السعر</button>
+
+                        </div>
+                        <div>
+                            <label>الكمية</label>
+                            <input type="text" />
+                            <button style="margin-left: 0.5rem; width: 6rem;" class="rounded bg-purple">تعديل الكمية</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-2">
+                <h3>طلبية جديدة</h3>
+                <button style="width: 80px; margin: 20px;" class="rounded bg-purple text-md">تتبع الطلبية</button>
+                <div class="new-order-panel">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>المعرف</th>
+                                <th>الاسم</th>
+                                <th>السعر</th>
+                                <th>الكمية</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Product A</td>
+                                <td>$10.99</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Product B</td>
+                                <td>$20.99</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Product C</td>
+                                <td>$5.99</td>
+                                <td>10</td>
+                            </tr>
+                            
+                            <!-- Add more rows here -->
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="orders-table">
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>Order Table</title>
+                </head>
+                <body>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>رقم الطلبية</th>
+                                <th>التاريخ</th>
+                                <th>المنتجات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12345</td>
+                                <td>12/12/2023</td>
+                                <td>
+                                    <table class="sub-table">
+                                        <thead>
+                                            <tr>
+                                                <th>رقم المنتج</th>
+                                                <th>اسم المنتج</th>
+                                                <th>السعر</th>
+                                                <th>الكمية</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Product A</td>
+                                                <td>$10.99</td>
+                                                <td>5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Product B</td>
+                                                <td>$20.99</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <!-- Add more rows for products in this order -->
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- Add more rows for orders and their products -->
+                        </tbody>
+                    </table>
+                </body>
+                </html>
+                
+            </div>
+
+            </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "stockmanagementsystem",
+  "version": "1.0.0",
+  "description": "a prototype stock management system",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "Gutenberg",
+  "license": "ISC"
+}

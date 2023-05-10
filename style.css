@@ -1,0 +1,189 @@
+body{
+    overflow-x: hidden;
+}
+
+.title{
+    text-align: center;
+    margin: 3rem;
+    color: black;
+}
+.background{
+    background-color: rgb(237, 234, 240);
+}
+.container-1{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+.product-panel{
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    border-radius: 1%;
+    padding: 0.5rem;
+
+}
+.image-container{
+    width: 50%;
+    background-color: white;
+    height: 100%;
+    border-radius: 1%;
+    padding: 0.5rem;
+    background-image: url('https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.text-center{
+    text-align: center;
+}
+.product-panel-input{
+    margin: 1rem;
+}
+.product-panel-container{
+    display: flex;
+}
+.product-panel-barcode{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 150px;
+    height: 150px;
+    background-image: url('https://th.bing.com/th/id/OIP.MvWZvxFYyF4stFHSlRfl2QHaFN?pid=ImgDet&rs=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-purple{
+    background-color: rgb(226, 31, 226);
+    padding: 0.6rem;
+    width:60px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.bg-purple:hover{
+    background-color: rgb(237, 63, 237);
+}
+
+.bg-red{
+    background-color: rgb(245, 50, 119);
+    padding: 0.6rem;
+    width:60px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.bg-red:hover{
+    background-color: rgb(245, 50, 119);
+}
+
+.rounded{
+    border-radius: 5px;
+}
+
+.text-lg{
+    font-size: xx-large;
+}
+
+.text-md{
+    font-size: medium;
+}
+
+.container-2{
+    margin-top:8rem;
+    text-align: center;
+    height: 50vh;
+    padding: 2rem;
+}
+
+.add-product-panel{
+    width: 100%;
+    height: 100%;
+    background: white;
+    margin-bottom:1rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.add-product-image{
+    background-image: url('https://th.bing.com/th/id/R.8a9ff30b1605b50f6e70b3c82707565e?rik=uU83oPMiIWrlMg&pid=ImgRaw&r=0');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2rem;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+.add-product-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.update-product-panel{
+    background-color: white;
+    padding: 2rem;
+    width:100%;
+    height: 100%;
+}
+
+.update-product-inputs{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    height: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #dddddd;
+}
+
+th {
+    background-color: #a74caf;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.sub-table {
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+}
+
+.sub-table td {
+    padding: 4px;
+}
+
+.sub-table th {
+    background-color: #cdb7cf;
+    font-weight: normal;
+    padding: 4px;
+    text-align: left;
+}
+
+.new-order-panel{
+    background-color: white;
+}
+
+.orders-table{
+    background-color: white;
+    margin-top: 16rem;
+    margin-bottom: 3rem;
+}
