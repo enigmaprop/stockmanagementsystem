@@ -2,10 +2,16 @@
   "name": "stockmanagementsystem",
   "version": "1.0.0",
   "description": "a prototype stock management system",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "npm start"
+    "start": "electron ."
   },
   "author": "Gutenberg",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^24.3.0"
+  },
+  "dependencies": {
+    "mongoose": "^7.1.1"
+  }
 }
