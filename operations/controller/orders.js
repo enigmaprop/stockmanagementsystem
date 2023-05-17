@@ -5,6 +5,29 @@ const {
     updateProduct ,
 } = require('./products')
 
+module.exports.getOrders = async(slider)=>{
+    try{
+        const orders = await Order.find({});
+        const filterdOrders = orders.filter((order , i)=>{
+            if(!slider.min && slider.max && i + 1 <= slider.max){
+                return order;
+            }
+            if(!slider.max && slider.min && i + 1 >= slider.min){
+                return order;
+            }
+            if(!slider.min && !slider.max){
+                return order ;
+            }
+            if(slider.min && slider.max && i + 1 >= slider.min && i + 1 <= slider.max){
+                return order;
+            }
+        })
+        return filterdOrders;
+    }catch(err){
+        return err
+    }
+}
+
 module.exports.addOrder = (data)=>{
     try{
         const products = data.products.map(async(product , i)=>{
